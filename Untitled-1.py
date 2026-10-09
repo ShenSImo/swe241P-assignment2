@@ -28,13 +28,14 @@ def binarySearchLast(array, target):
         else:
             result = mid
             lo = mid + 1
-        return result
+    return result
 
 def binarySearchFirstLast(array, target):
     alist = []
     alist.append(binarySearchFirst(array, target))
     alist.append(binarySearchLast(array, target))
     return alist
-array = [1, 2, 4, 5, 5, 5, 6, 7]
+array = [1, 2, 3, 4, 5, 5, 5, 6, 7]
 target = 5
+#last occurance wrong
 print(binarySearchFirstLast(array, target))
