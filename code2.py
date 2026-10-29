@@ -57,7 +57,7 @@ def findMatrix(matrix, target):
     while lo <= hi:
         mid = (lo + hi) // 2
         row = mid // n
-        col = mid % 2
+        col = mid % n
         if matrix[row][col] > target:
             hi = mid - 1
         elif matrix[row][col] < target:
